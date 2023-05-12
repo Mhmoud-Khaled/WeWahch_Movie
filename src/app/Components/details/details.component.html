@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="text-center text-5xl my-10 text-red-600 font-bold tracking-wider title">{{MovieDate.title}}</h1>
+  <div class="row gap-4">
+    <div class="col-sm-12 col-md-4">
+      <img src="{{posterPath+MovieDate.poster_path}}" alt="Movie_poster">
+    </div>
+    <div class="col-sm-12 col-md-7">
+      <h3 class="text-4xl mb-4 text-red-400">{{movieGenre.join("/")}}</h3>
+      <p class="mb-4">{{MovieDate.overview}}</p>
+      <h4 class="text-4xl mb-6 text-red-400">Rate: <span class="text-white text-5xl rate">{{MovieDate.vote_average | number:'1.0-1'}} / 10</span></h4>
+      <h4 class="text-4xl mb-12 text-red-400">Casts</h4>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-2">
+        <div class="flex" *ngFor="let item of movieActors">
+          <img class="h-20" src="{{posterPath+item.profile_path}}" alt="Actor_photo">
+          <div class="flex flex-col ml-4">
+            <h4 class="text-sm text-red-300" >{{item.name}}</h4>
+            <h6 class="text-sm">{{item.character}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

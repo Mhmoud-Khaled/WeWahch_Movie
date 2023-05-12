@@ -1,0 +1,18 @@
+<div class="search">
+  <div class="container">
+    <div class="search-bar w-full flex justify-center items-center my-10">
+      <input class="w-full p-2 mr-3 rounded-md bg-gray-800 px-3 focus:outline-none" type="text" id="search-input" placeholder="Type your favourite movie..." [(ngModel)]="movieName">
+      <button class="p-2 px-4 bg-red-500 rounded-xl font-bold hover:bg-red-800">Search</button>
+    </div>
+    <div class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4">
+      <div class="box" *ngFor="let item of specificDate | filter:movieName">
+        <div class="relative hover:scale-110 cursor-pointer transition-all duration-300">
+          <img src="{{ poserPath + item.poster}}" alt="" (click)="getMovieId(item.id)" />
+          <p class="rate absolute">{{ item.rate | number:'1.0-1'}}</p>
+        </div>
+        <h2 class="py-3 font-bold text-center text-l">{{ item.title }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+

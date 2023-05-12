@@ -1,0 +1,46 @@
+1- nave bar
+
+2- Movies banar
+
+3- trending Movies
+
+4- Action Movies
+
+5- Adventure Movies
+
+6- Animation Movies
+
+7- Comedy Movies
+
+8- Documentary Movies
+
+9- Science-Fiction Movies
+
+10- Thriller Movies
+
+
+/////////////////////////////////////////////////////////
+
+Movie Details Page
+
+-panar
+
+-title
+
+-Details
+
+-Watch Trailer button
+
+- top cast (3 columns)
+
+//////////////////////////////////////////////////////////
+
+search page
+
+-search bar
+
+- search button
+
+- search results (3 columns)
+
+and route to movie Details

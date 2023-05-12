@@ -1,0 +1,40 @@
+.navbar a{
+  color: white;
+}
+
+.navbar{
+  height: 70px;
+  z-index: 111;
+  position: relative;
+}
+
+.nav-item a{
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  top: 90%;
+  left: -100%;
+  transition: 0.2s;
+}
+
+.nav-item a:hover::before{
+  left: 0%;
+}
+
+.logo{
+  transition: 0.3s;
+}
+
+.logo:hover{
+  color: red !important;
+}
+
+
+

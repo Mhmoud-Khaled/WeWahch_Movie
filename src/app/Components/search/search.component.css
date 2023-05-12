@@ -1,0 +1,14 @@
+.rate{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 35px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}

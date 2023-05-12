@@ -1,0 +1,12 @@
+<div class="container mt-8">
+  <h1 class="text-center text-8xl text-red-400 title mb-16">{{ GenreTitle }}</h1>
+  <div class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4">
+    <div class="box" *ngFor="let item of movieData; let index = index">
+      <div class="relative hover:scale-110 cursor-pointer transition-all duration-300">
+        <img src="{{ posterPath + item.poster_path }}" alt="" (click)="getMovieId(item.id)" />
+        <p class="rate absolute">{{ item.vote_average }}</p>
+      </div>
+      <h2 class="py-3 font-bold text-center text-l">{{ item.title }}</h2>
+    </div>
+  </div>
+</div>

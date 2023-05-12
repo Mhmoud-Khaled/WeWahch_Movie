@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Teko&display=swap');
+
+
+/* Top Rate */
+.img{
+  position: relative;
+  transform: translateY(-70px);
+}
+
+.img img{
+  height: 90vh;
+}
+
+
+.img .title{
+  position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 90%;
+}
+
+.img .title h2{
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: red;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center
+}
+
+.title p{
+  text-align: center;
+  color: #ffeef2;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+/* Trending */
+
+.group-title{
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.group-title:hover{
+  color:red
+}
+
+.panar{
+  position: relative;
+}
+
+.panar-img{
+  cursor: pointer;
+  z-index: 55;
+  position: relative;
+}
+
+.panar-img:hover{
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.rate{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 35px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}
+
+
+.tip{
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  width: 100px;
+  background-color: #ff76009e;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transform: translateX(50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tip:hover{
+  z-index: 56;
+}
+
+/* .panar-img:hover {
+
+} */
+

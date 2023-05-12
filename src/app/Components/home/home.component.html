@@ -1,0 +1,111 @@
+<div class="home">
+  <div class="img">
+    <owl-carousel-o [options]="topRateSlider">
+      <ng-template *ngFor="let item of toRate, let index = index" carouselSlide>
+        <img class="w-100 cursor-pointer" src= {{poserPath+item.backdrop_path}} alt="" (dblclick)="getMovieId(item.id)">
+        <div class="title">
+          <h2>{{item.title}}</h2>
+          <p>{{item.overview}}</p>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid">
+    <div class="trending">
+      <h2 class="group-title" (click)="setGenreId($event)">Trending Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of tranding, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Action my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Action Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of action, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Adventure my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Adventure Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of adventure, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Animation my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Animation Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of animation, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Comedy my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Comedy Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of comedy, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Documentary my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Documentary Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of documentary, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Science-Fiction my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Science-Fiction Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of scienceFiction, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="Thriller my-5">
+      <h2 class="group-title" (click)="setGenreId($event)">Thriller Movies</h2>
+      <div class="row">
+        <owl-carousel-o [options]="TrendingSlider">
+          <ng-template *ngFor="let item of thriller, let index = index" carouselSlide>
+            <img class="w-100 panar-img" src= {{poserPath+item.poster_path}} alt="" height="350px" (dblclick)="getMovieId(item.id)">
+            <div class="rate">{{item.vote_average| number:'1.0-1'}}</div>
+            <span class="tip" (dblclick)="getMovieId(item.id)">douple click to show details</span>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</div>
